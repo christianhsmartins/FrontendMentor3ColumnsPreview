@@ -1,0 +1,66 @@
+body {
+    @include flex(row, center, center);
+    width: 100vw;
+    height: 100vh;
+    background: #F2F2F2;
+}
+
+.container {
+    @include flex(row, flex-start, flex-start);
+    width: 100%;
+    height: 100%;
+    max-width: 83rem;
+    max-height: 45rem;
+    border-radius: 8px;
+
+    .column {
+        width: 100%;
+        height: 100%;
+        padding: 4rem 4rem 4.4rem;
+
+        img {
+            width: 100%;
+            max-width: 6.4rem;
+            mix-blend-mode: overlay;
+        }
+
+        h1 {
+            margin-top: 4rem;
+        }
+
+        p {
+            max-width: 19.2rem;
+            margin-top: 3.2rem;
+        }
+
+        button {
+            margin-top: 7.3rem;
+        }
+
+        &:nth-child(1) {
+            background: $primary;
+            border-radius: 8px 0 0 8px;
+
+            button {
+                color: $primary;
+            }
+        }
+
+        &:nth-child(2) {
+            background: $secondary;
+
+            button {
+                color: $secondary;
+            }
+        }
+
+        &:nth-child(3) {
+            background: $tertiary;
+            border-radius: 0 8px 8px 0;
+
+            button {
+                color: $tertiary;
+            }
+        }
+    }
+}
