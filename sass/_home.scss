@@ -43,6 +43,10 @@ body {
 
             button {
                 color: $primary;
+
+                &:hover {
+                    color: $white;
+                }
             }
         }
 
@@ -51,6 +55,10 @@ body {
 
             button {
                 color: $secondary;
+
+                &:hover {
+                    color: $white;
+                }
             }
         }
 
@@ -60,6 +68,10 @@ body {
 
             button {
                 color: $tertiary;
+
+                &:hover {
+                    color: $white;
+                }
             }
         }
     }
